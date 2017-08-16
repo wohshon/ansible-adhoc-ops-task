@@ -1,0 +1,14 @@
+oracledb:
+  sid: XE
+  schema: hr
+  password: hr
+  home: "/u01/app/oracle/product/11.2.0/xe"
+#  client: "{{home}}/bin/sqlplus"
+  client: "$ORACLE_HOME/bin/sqlplus"
+ 
+download_server:
+  host: 192.168.223.130
+  dest: /home/virtuser
+
+#ORACLE_HOME: "/u01/app/oracle/product/11.2.0/xe"
+

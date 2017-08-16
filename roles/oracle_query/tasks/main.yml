@@ -1,0 +1,13 @@
+---
+# calls a sql script to fire queries and spool output
+
+- name: Oracle query
+  shell: |
+   . ~/.bash_profile &&  echo "exit" | {{oracledb.client}} {{ oracledb.schema }}/{{ oracledb.password }}@{{oracledb.sid }} <<" EOF"
+    {{query}}
+    EOF
+
+- name: transfer file to downloadserver
+  shell: scp {{spoolpath}}/{{spoolfile}} {{ download_server.host}}:{{download_server.dest}} 
+
+ 

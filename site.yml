@@ -1,0 +1,11 @@
+---
+# execute admin tasks
+
+# ora
+- name: call query
+  hosts: dbservers 
+  remote_user: virtuser
+  roles:
+    - oracle_query
+
+    #ORACLE_HOME: "/u01/app/oracle/product/11.2.0/xe"

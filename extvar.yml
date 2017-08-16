@@ -1,0 +1,19 @@
+---
+spoolpath: /home/virtuser
+spoolconfig: |
+    set embedded on
+    set colsep ,
+    set pagesize 0
+    set heading on
+    set headsep on
+    set pagesize 0
+    set trimspool on
+    set linesize 2000
+    set numwidth 5
+spoolfile: testoutput.csv
+queryStatement: SELECT * from hr.employees;
+query: |
+  {{spoolconfig}}
+  spool {{spoolpath}}/{{ spoolfile }}
+  {{queryStatement}}
+  spool off

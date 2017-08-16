@@ -1,0 +1,15 @@
+{
+"query": "set embedded on\n
+    set colsep ,\n
+    set pagesize 0\n
+    set heading on\n
+    set headsep on\n
+    set pagesize 0\n
+    set trimspool on\n
+    set linesize 2000\n
+    set numwidth 5\n
+    spool /home/virtuser/emp.csv\n
+    SELECT * FROM hr.employees;\n
+    spool off"
+
+}
