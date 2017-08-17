@@ -1,0 +1,5 @@
+---
+logfile:
+  path: /home/virtuser/eap/jboss-eap-7.0/standalone/log 
+#  name: server.log
+  name: gc.log.0.current

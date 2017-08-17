@@ -1,0 +1,10 @@
+---
+# execute admin tasks
+
+# log files
+- name: grab log file
+  hosts: appservers 
+  remote_user: virtuser
+  roles:
+    - getlogfiles
+

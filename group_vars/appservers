@@ -1,0 +1,7 @@
+download_server:
+  host: 192.168.223.144
+  dest: /home/virtuser
+
+logfile: 
+  path: /home/virtuser/eap/jboss-eap-7.0/standalone/log
+  name: server.log

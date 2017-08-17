@@ -1,0 +1,7 @@
+---
+# send log files to download server
+
+- name: transfer file to downloadserver
+  shell: scp {{logfile.path}}/{{ logfile.name }} {{ download_server.host}}:{{download_server.dest}} 
+
+ 
